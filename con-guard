@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while [ "nguk" != "wew" ]; do
+while [ "1" != "2" ]; do
 TEST=$(ping -c 1 -w 1 -t 10 222.124.158.86 | grep "64 bytes" | awk -F= '{ print $2 }' | awk '{ print $1 }')
 
   if [ "$TEST" = "" ]; then
